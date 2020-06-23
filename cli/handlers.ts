@@ -1,4 +1,5 @@
-import { Fastro, FastroError, Request, version } from "../mod.ts";
+import { Fastro, FastroError, version } from "../mod.ts";
+import { parse } from "../deps.ts";
 
 function errorHandler(err: Error) {
   if (err.name === "NotFound") {
@@ -89,4 +90,21 @@ export function handler(req: Request) {
 export async function getVersion() {
   const file = await import("../mod.ts");
   console.log(file.version);
+}
+
+export async function register(email: string) {
+  const r = await fetch("http://api.fastro.local/register", {
+    method: "POST",
+    body: email,
+  });
+  console.log(r);
+}
+
+export function getArguments (cmdargs: string[]) {
+  const {
+    _ : args,
+    email
+  } = parse(cmdargs);
+
+  return { args, email }
 }
