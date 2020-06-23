@@ -89,47 +89,47 @@ const compile = () => {
 
   const abc_item = {
     text:
-      "| [Abc](https://github.com/fastrodev/fastro/blob/master/benchmarks/abc.ts) | ${abc_version} | &#10003; | [${abc}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_abc.json) |",
+      "| [Abc](https://github.com/fastrodev/fastro/blob/master/benchmarks/abc.ts) | [${abc}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_abc.json) | &#10003; | ${abc_version} |",
     value: abc,
   };
   const deno_item = {
     text:
-      "| [Deno http](https://github.com/fastrodev/fastro/blob/master/benchmarks/deno_http.ts) | ${deno_version} | &#10007; | [${deno_http}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_deno.json) |",
+      "| [Deno http](https://github.com/fastrodev/fastro/blob/master/benchmarks/deno_http.ts) | [${deno_http}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_deno.json) | &#10007; | ${deno_version} |",
     value: deno,
   };
   const express_item = {
     text:
-      "| [Express](https://github.com/fastrodev/fastro/blob/master/benchmarks/express.js) | ${express_version} | &#10003; | [${express}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_express.json) |",
+      "| [Express](https://github.com/fastrodev/fastro/blob/master/benchmarks/express.js) | [${express}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_express.json) | &#10003; | ${express_version} |",
     value: express,
   };
   const fastify_item = {
     text:
-      "| [Fastify](https://github.com/fastrodev/fastro/blob/master/benchmarks/fastify.js) | ${fastify_version} | &#10003; | [${fastify}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_fastify.json) |",
+      "| [Fastify](https://github.com/fastrodev/fastro/blob/master/benchmarks/fastify.js) |  [${fastify}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_fastify.json) | &#10003; | ${fastify_version} |",
     value: fastify,
   };
   const fastro_item = {
     text:
-      "| [**Fastro**](https://github.com/fastrodev/fastro/blob/master/benchmarks/fastro.ts) | **${fastro_version}** | **&#10003;** | **[${fastro}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_fastro.json)**  |",
+      "| [**Fastro**](https://github.com/fastrodev/fastro/blob/master/benchmarks/fastro.ts) | **[${fastro}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_fastro.json)**  | **&#10003;** | **${fastro_version}** |",
     value: fastro,
   };
   const node_item = {
     text:
-      "| [Node http](https://github.com/fastrodev/fastro/blob/master/benchmarks/node_http.js) | ${node_version} | &#10007; | [${node}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_node.json) |",
+      "| [Node http](https://github.com/fastrodev/fastro/blob/master/benchmarks/node_http.js) | [${node}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_node.json) | &#10007; | ${node_version} | ",
     value: node,
   };
   const oak_item = {
     text:
-      "| [Oak](https://github.com/fastrodev/fastro/blob/master/benchmarks/oak.ts) | ${oak_version} | &#10003; | [${oak}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_oak.json) |",
+      "| [Oak](https://github.com/fastrodev/fastro/blob/master/benchmarks/oak.ts) | [${oak}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_oak.json) |  &#10003; | ${oak_version} |",
     value: oak,
   };
   const php_item = {
     text:
-      "| [PHP](https://github.com/fastrodev/fastro/blob/master/benchmarks/index.php) | ${php_version} | &#10007; | [${php}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_php.json) |",
+      "| [PHP](https://github.com/fastrodev/fastro/blob/master/benchmarks/index.php) | [${php}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_php.json) |  &#10007; | ${php_version} |",
     value: php,
   };
   const flask_item = {
     text:
-      "| [Python Flask](https://github.com/fastrodev/fastro/blob/master/benchmarks/flask_app.py) | ${flask_version} | &#10003; | [${flask}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_flask.json) |",
+      "| [Python Flask](https://github.com/fastrodev/fastro/blob/master/benchmarks/flask_app.py) | [${flask}](https://github.com/fastrodev/fastro/blob/master/benchmarks/benchmark_flask.json) | &#10003; | ${flask_version} |",
     value: flask,
   };
   const dataList = [
