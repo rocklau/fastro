@@ -74,7 +74,7 @@ Example:
 `;
 
 export const harmful_msg =
-  `Deployment failed. For security reasons, you are not allowed to run Deno runtime API. Instead, use Fastro runtime API.
+  `Deployment failed. For security reasons, you are not allowed to run Deno runtime API.
 `;
 
 export const handler_content =

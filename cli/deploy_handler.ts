@@ -109,9 +109,10 @@ export async function deploy() {
         if (result === "update_ok" || result === "make_folder_ok") {
           return sendFile(id, files, owner);
         }
-        console.error({ error: true, message: result });
+        console.error(JSON.parse(result));
       });
   } catch (error) {
-    console.error({ error: true, message: error.message });
+    const message = error.name === 'NotFound' ? "File app.json or fastro.json not found. Init your app create account first" : error.message
+    console.error({ error: true, message });
   }
 }
