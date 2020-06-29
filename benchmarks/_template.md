@@ -16,7 +16,7 @@ await server.listen();
 ## Benchmarks
 If performance is **really important** to you, here are the `Hello World` benchmark results. Check [this folder](https://github.com/fastrodev/fastro/tree/master/benchmarks) to see the details.
 
-| Framework | Req/s Avg | Router? | Version |
+| Framework | Request/s | Router? | Version |
 | :-- | --: | :--: | :-- |
 ${table}
 
