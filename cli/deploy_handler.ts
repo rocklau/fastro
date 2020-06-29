@@ -112,7 +112,9 @@ export async function deploy() {
         console.error(JSON.parse(result));
       });
   } catch (error) {
-    const message = error.name === 'NotFound' ? "File app.json or fastro.json not found. Init your app create account first" : error.message
+    const message = error.name === "NotFound"
+      ? "File app.json or fastro.json not found. Init your app create account first"
+      : error.message;
     console.error({ error: true, message });
   }
 }
