@@ -108,15 +108,17 @@ export async function register(email: string) {
       method: "POST",
       body: email,
     });
-    const credential = await r.text();
-    if (credential === "user already exist") {
-      return console.error({ error: true, message: credential });
+    const res = await r.text();
+    const credential = JSON.parse(res);
+    if (credential.message === "user already exist") {
+      return console.error({ error: true, message: res });
     }
     const encoder = new TextEncoder();
-    const data = encoder.encode(credential);
+    const data = encoder.encode(res);
     await Deno.writeFile("fastro.json", data);
-    console.log(JSON.parse(credential));
+    console.log(JSON.parse(res));
   } catch (error) {
+    console.log(error);
     console.error("ERROR_REGISTER:", error.message);
   }
 }

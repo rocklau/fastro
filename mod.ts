@@ -1,5 +1,5 @@
 export const version = {
-  fastro: "0.12.1",
+  fastro: "0.12.2",
   deno: "1.1.2",
 };
 export * from "./core/server.ts";
